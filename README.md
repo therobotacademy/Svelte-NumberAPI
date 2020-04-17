@@ -1,5 +1,5 @@
 # Tutorial [Consuming an API in Svelte](https://dev.to/blazephoenix/consuming-an-api-in-svelte-5181)
-TEMPLATE DOWNLOADED USING DEGIT:
+TEMPLATE DOWNLOADED USING [DEGIT](https://github.com/Rich-Harris/degit):
 `$ npx degit sveltejs/template numberfacts`
 
 -------- SVELTE TEMPLATE begins here -------
