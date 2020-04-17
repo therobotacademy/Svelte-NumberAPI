@@ -2,6 +2,15 @@
 TEMPLATE DOWNLOADED USING [DEGIT](https://github.com/Rich-Harris/degit):
 `$ npx degit sveltejs/template numberfacts`
 
+
+On error: `Error: ENOSPC: System limit for number of file watchers reached, watch '/home/ubuntu/VSC/UDX/SVELTE-VUE/numberfacts/rollup.config.js'`
+> Solved [here](https://stackoverflow.com/questions/55763428/react-native-error-enospc-system-limit-for-number-of-file-watchers-reached). Just type in:
+
+```bash
+echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+cat /proc/sys/fs/inotify/max_user_watches
+```
+
 -------- SVELTE TEMPLATE begins here -------
 
 *Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
